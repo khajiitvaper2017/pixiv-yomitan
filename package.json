@@ -9,6 +9,7 @@
     "build:tsc": "tsc",
     "buildPixiv": "bun run build:tsc && bun run . --light false",
     "buildPixivLight": "bun run build:tsc && bun run . --light true",
+    "buildPixivFiltered": "bun run build:tsc && bun run . --light false --onlyFiltered true",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint .",
@@ -23,7 +24,6 @@
     "cli-progress": "^3.12.0",
     "dotenv": "^16.4.1",
     "japanese-furigana-normalize": "^1.0.5",
-    "prisma": "^5.9.1",
     "yargs": "^17.7.2",
     "yomichan-dict-builder": "^2.9.1"
   },
@@ -34,6 +34,7 @@
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "eslint": "^8.56.0",
-    "prettier": "^3.2.5"
+    "prettier": "^3.2.5",
+    "prisma": "^5.9.1"
   }
 }

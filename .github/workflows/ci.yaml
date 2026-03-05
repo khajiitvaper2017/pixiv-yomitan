@@ -74,6 +74,11 @@ jobs:
         env:
           NODE_ENV: dev
 
+      - name: Build Filtered Dictionary (Dev Mode)
+        run: bun run buildPixivFiltered
+        env:
+          NODE_ENV: dev
+
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:

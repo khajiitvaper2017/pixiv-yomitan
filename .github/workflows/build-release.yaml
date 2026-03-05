@@ -32,6 +32,7 @@ jobs:
         run: |
           bun run buildPixiv -- --tagName ${{ steps.date.outputs.date }}
           bun run buildPixivLight -- --tagName ${{ steps.date.outputs.date }}
+          bun run buildPixivFiltered -- --tagName ${{ steps.date.outputs.date }}
 
       - name: Create and Publish Release
         uses: softprops/action-gh-release@v1
